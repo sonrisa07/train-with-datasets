@@ -120,11 +120,11 @@ class CIFAR10:
                 torch.save(self.model.state_dict(), self.cfg["save_path"])
 
             print(
-                "Training: Loss: {:.5f}, Accuracy: {:.5f}%,"
-                "\nValidation: Loss: {:.5f}, Accuracy: {:.5f}%".format(
+                "Training: loss: {:.5f}, accuracy: {:.5f}%,"
+                "\nValidation: loss: {:.5f}, accuracy: {:.5f}%".format(
                     train_loss, train_acc * 100, valid_loss, valid_acc * 100))
 
-            print("The Best Validation Accuracy is : {:.5f}% at epoch {}".format(best_acc * 100, best_epoch))
+            print("The best validation accuracy is : {:.5f}% at epoch {}".format(best_acc * 100, best_epoch))
 
             history.append([train_acc, train_loss, valid_acc, valid_loss])
 
