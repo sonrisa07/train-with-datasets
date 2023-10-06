@@ -42,7 +42,7 @@ You must install the relevant dependency packages.
 - [rich](https://github.com/Textualize/rich) - a Python library for rich text and beautiful formatting in the terminal
   - `pip install rich`
 
-Simultaneously, every dataset needs to be downloaded if you plan to use it. Please ensure you can get online.
+Simultaneously, every dataset needs to be downloaded Automatically after the code is run if you plan to use it. Please ensure you can get online.
 
 ### ⛏️ Installing
 After installing related dependencies, you simply have to clone this repository locally.
