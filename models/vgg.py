@@ -76,9 +76,9 @@ class VGG(nn.Module):  # general VGG model
         """
 
         layers = [FullBlock(512, 4096)]
-        nn.Dropout()
+        layers.append(nn.Dropout())
         layers.append(FullBlock(4096, 4096))
-        nn.Dropout()
+        layers.append(nn.Dropout())
         layers.append(FullBlock(4096, self.class_num))
 
         return nn.Sequential(*layers)
