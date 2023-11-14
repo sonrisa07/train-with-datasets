@@ -25,7 +25,7 @@
 ## 🧐 About <a name = "about"></a>
 During I learn deep learning, I am about to record the datasets which I will have encountered.
 
-Simultaneously, I will train and test the datasets by various suitable models I will have learned and add some comments in some crucial places.
+Simultaneously, I will train and test the datasets by various suitable models as much as possible. I will have learned and add some comments in some crucial places.
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
@@ -60,25 +60,25 @@ git clone https://github.com/sonrisa07/train-with-datasets.git
 ## 🎈 Usage <a name="usage"></a>
 Please ensure that you are currently in the repository directory.
 
-There are numerous Python files, each containing datasets. Then, pick one of them and begin executing it.
+There are numerous models, each containing many executable python files using different datasets. Then, pick one of them and begin executing it.
 
-Next, we use the CIFAR-10 dataset as an example. The python file is `cifar10.py`.
+Next, we use the vgg model and CIFAR-10 dataset as an example. The python file is `./models/vgg/cifar10.py`.
 
 Firstly, you can check the optional command parameters.
 
 ```shell
-python cifar10.py --help
+python /models/vgg/cifar10.py --help
 ```
 
 For instance, you can customize parameters such as epochs and learning rate.
 
 ```shell
-python cifar10.py -e 20 --lr 1e-3
+python /models/vgg/cifar10.py -e 20 --lr 1e-3
 ```
 
 You can also opt for various models to apply to this dataset.
 ```shell
-python cifar10.py -m VGG16
+python /models/vgg/cifar10.py -m VGG16
 ```
 >⚠️ The models folders include various models, but it's important to note that not all models are suitable for every dataset.
 
